@@ -17,7 +17,6 @@ While originally inspired by real-world GIS tools like WMS/WFS, this project foc
 - Zoomable, pannable high-resolution fantasy map
 - Clickable cities and markers with info popups
 - Modular layer system (planned)
-- Fully open-source and hackable
 - No server costs — runs entirely in the browser
 
 ---
@@ -27,7 +26,6 @@ While originally inspired by real-world GIS tools like WMS/WFS, this project foc
 - Optional WMS/WFS support using open-source servers
 - Map download/export tools for GMs and players
 - Campaign planning tools (e.g. custom markers, route planner)
-- Integration with other D&D utilities
 
 ---
 
@@ -44,3 +42,8 @@ Because every world deserves a proper map — even the imaginary ones.
 ## 📜 License
 MIT License — see [`LICENSE`](LICENSE) for details.  
 All original map artwork belongs to its respective creators. This project is for non-commercial, educational, and personal use only.
+
+## How to Use
+After cloning, you can use the map by opening the index.html file in the browser
+If you want the markers to be displayed, you will have to use a local development server (python, live server, ...)
+You can use the getCoords.html to get coordinates (displayed in console) for landmarks by clicking on them
