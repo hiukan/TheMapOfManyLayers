@@ -1,0 +1,411 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "City",
+        "name": "Krenalir",
+        "description": "A bustling city known for its trade and diverse population."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14615.895055325667,
+          1921.7349098781042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "City",
+        "name": "Chethel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14369.979422612876,
+          1901.7405985073292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14369.979422612876,
+          1901.7405985073292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "City",
+        "name": "Shoun"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14701.86556107079,
+          2249.64161635881
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "City",
+        "name": "Delzimmer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13494.279852464886,
+          2397.5995205025433
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "City",
+        "name": "Eartheart"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12820.511005113578,
+          2373.6063468576135
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "City",
+        "name": "Maarlith"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12994.45133069092,
+          726.075089905773
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "City",
+        "name": "Halagard"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9767.558394118187,
+          318.1911379419689
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "City",
+        "name": "Delselar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6869.694082844757,
+          426.27532965450155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "City",
+        "name": "Lundeth"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6869.694082844757,
+          426.27532965450155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "City",
+        "name": "Port Nyanzaru"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4681.456756979927,
+          2276.0221856539783
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "City",
+        "name": "Anchoril"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3911.7208334480183,
+          2682.043233582112
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "City",
+        "name": "Manshaka"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3911.7208334480183,
+          2682.043233582112
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "City",
+        "name": "Schamedar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7121.939639664436,
+          2576.0722455911605
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "City",
+        "name": "Almraiven"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7867.683794151195,
+          2748.0233233798235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "City",
+        "name": "Urbeth"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8057.618632425303,
+          2058.219581088094
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "City",
+        "name": "Yallasch"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8879.336722221704,
+          2528.085898301301
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "City",
+        "name": "Ithmong"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8787.368274215294,
+          1638.3390423018245
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "City",
+        "name": "Lushpool"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9027.285964666798,
+          1738.3105991556977
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "City",
+        "name": "Myrinjar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8973.304484315211,
+          2608.0631437844
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "City",
+        "name": "Dapplegate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9157.24138032803,
+          2438.1114971328147
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "City",
+        "name": "Gallard"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9245.821662644925,
+          2488.0972755597513
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "City",
+        "name": "Sheirtalar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9387.772962828732,
+          2058.219581088094
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "City",
+        "name": "Ormpur"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9413.76404596098,
+          2350.1365271014056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "City",
+        "name": "Blackbarn"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9283.808630299747,
+          2594.0671258248576
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "City",
+        "name": "Oeble"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9537.721519360923,
+          2804.007395217993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "City",
+        "name": "Emrys"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9563.712602493168,
+          2648.0517665259495
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "City",
+        "name": "Shaarmid"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10737.309971618444,
+          2768.017634750598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "City",
+        "name": "Chavyondat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15687.591195909137,
+          2684.041526993344
+        ]
+      }
+    }
+  ]
+}

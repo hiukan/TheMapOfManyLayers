@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Fantasy Map Annotator</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    #map {
+      height: 100vh;
+    }
+
+    #controls {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 1000;
+      background: white;
+      padding: 8px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="controls">
+    <label for="markerType">Marker type:</label>
+    <select id="markerType">
+      <option>City</option>
+      <option>Town</option>
+      <option>Fortress</option>
+      <option>Ruins</option>
+      <option>Site</option>
+      <option>Capital</option>
+      <option>Pirate Settlement</option>
+      <option>Dwarven Settlement</option>
+      <option>Bridge</option>
+      <option>Road</option>
+      <option>Track</option>
+    </select>
+  </div>
+
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    const map = L.map('map', {
+      crs: L.CRS.Simple,
+      minZoom: -5
+    });
+
+    const w = 16695;
+    const h = 9555;
+    const image = L.imageOverlay('forgotten_realms_map.png', [[0, 0], [h, w]]).addTo(map);
+    map.fitBounds([[0, 0], [h, w]]);
+
+    const features = [];
+
+    function updateGeoJSON() {
+      console.log(JSON.stringify({
+        type: "FeatureCollection",
+        features: features
+      }, null, 2));
+    }
+
+    map.on('click', function (e) {
+      const coords = [e.latlng.lng, e.latlng.lat]; // reversed for GeoJSON
+
+      const type = document.getElementById("markerType").value;
+      const marker = L.circleMarker(e.latlng, {
+        radius: 6,
+        fillColor: "#ff7800",
+        color: "#000",
+        weight: 1,
+        opacity: 1,
+        fillOpacity: 0.8
+      }).addTo(map).bindPopup(`${type}`);
+
+      const geoFeature = {
+        type: "Feature",
+        properties: { type },
+        geometry: {
+          type: "Point",
+          coordinates: coords
+        }
+      };
+
+      features.push(geoFeature);
+      updateGeoJSON();
+    });
+  </script>
+
+</body>
+
+</html>
