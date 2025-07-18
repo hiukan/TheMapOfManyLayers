@@ -178,8 +178,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          3911.7208334480183,
-          2682.043233582112
+          6972.753779715196,
+          2513.039500266725
         ]
       }
     },
@@ -406,6 +406,80 @@
           2684.041526993344
         ]
       }
-    }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "City",
+        "name": "Tulmon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8423.11492703387,
+          2835.0067660293203
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "City",
+        "name": "Yeshpeck"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8265.006252937903,
+          2953.8910635774732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "City",
+        "name": "Arthyn"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9183.938621931764,
+          2918.225774313027
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+          "type": "City",
+          "name": "Ormpé"
+      },
+      "geometry": {
+          "type": "Point",
+          "coordinates": [
+              16294.12478437153,
+              3056.2309695581703
+          ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+          "type": "City",
+          "name": "Vaelan"
+      },
+      "geometry": {
+          "type": "Point",
+          "coordinates": [
+              16119.373091949672,
+              3181.059481983731
+          ]
+      }
+    },
+    {"type":"Feature","properties":{"type":"City","name":"Assur"},"geometry":{"type":"Point","coordinates":[16072.376620569381,3225.668864463309]}},
+    {"type":"Feature","properties":{"type":"City","name":"Gheldaneth"},"geometry":{"type":"Point","coordinates":[14044.432110784139,4476.969077755289]}},
+    {"type":"Feature","properties":{"type":"City","name":"Djerad Kethendi"},"geometry":{"type":"Point","coordinates":[13728.366749338687,4397.949018360764]}},
+    {"type":"Feature","properties":{"type":"City","name":"Nelderild"},"geometry":{"type":"Point","coordinates":[13822.513878279886,4586.252138620056]}}
   ]
 }

@@ -20,7 +20,6 @@ const map = L.map('map', {
 });
 
 function getColorByType(type) {
-  console.log(`type: ${type}`);
   switch (type) {
     case 'City': return '#ff5733';
     case 'Fortress': return '#888';
@@ -33,7 +32,7 @@ function getColorByType(type) {
 L.imageOverlay('forgotten_realms_map.png', imageBounds).addTo(map);
 L.rectangle(imageBounds, {
   color: 'black',
-  weight: 20,
+  weight: 3,
   fill: false
 }).addTo(map);
 
@@ -63,9 +62,30 @@ fetch('locations.geojson')
 map.fitBounds(imageBounds);
 
 map.on('click', function (e) {
-  const coords = e.latlng;
-  const x = Math.round(coords.lng);
-  const y = Math.round(coords.lat);
-  console.log(`Clicked at: [${y}, ${x}]`);
+  const coords = [e.latlng.lng, e.latlng.lat]; // reversed for GeoJSON
+
+  const type = document.getElementById("markerType").value;
+  const marker = L.circleMarker(e.latlng, {
+    radius: 6,
+    fillColor: "#ff7800",
+    color: "#000",
+    weight: 1,
+    opacity: 1,
+    fillOpacity: 0.8
+  }).addTo(map).bindPopup(`${type}`);
+
+    const newLandmark = {
+      type: "Feature",
+      properties: { type, name: "" },
+      geometry: {
+        type: "Point",
+        coordinates: coords
+      }
+    }
+  navigator.clipboard.writeText(JSON.stringify(newLandmark)).then(() => {
+    console.log(`${JSON.stringify(newLandmark)} copied to clipboard`);
+  }).catch(err => {
+    console.error("Failed to copy coordinates: ", err);
+  });
 });
 
