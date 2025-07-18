@@ -6,12 +6,18 @@
   <title>The Map of Many Layers</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <link rel="stylesheet" href="style.css" />
+  <!-- Leaflet Draw CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.css" />
+
+
+
 </head>
 
 <body>
   <div id="controls">
     <label for="markerType">Marker type:</label>
     <select id="markerType">
+      <option>Country</option>
       <option>City</option>
       <option>Town</option>
       <option>Fortress</option>
@@ -23,11 +29,31 @@
       <option>Bridge</option>
       <option>Road</option>
       <option>Track</option>
+      <option>Hills</option>
+      <option>Low Mountains</option>
+      <option>High Mountains</option>
+      <option>Cliffs/Escarpment</option>
+      <option>Cleared/Mix</option>
+      <option>Grasslands</option>
+      <option>Forest</option>
+      <option>Jungle</option>
+      <option>Marsh</option>
+      <option>Swamp</option>
+      <option>Moor</option>
+      <option>Barren/Badlands</option>
+      <option>Volcano</option>
+      <option>Glacier</option>
+      <option>River</option>
+      <option>Subterranean River</option>
+      <option>Sandy Desert</option>
+      <option>Rocky Desert</option>
     </select>
   </div>
 
   <div id="map"></div>
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Leaflet Draw JS -->
+  <script src="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.js"></script>
   <script src="map.js"></script>
 </body>
 
