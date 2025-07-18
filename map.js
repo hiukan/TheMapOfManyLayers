@@ -35,12 +35,14 @@ var ruinsMarker = L.icon({
 
 function getColorByType(type) {
   switch (type) {
-    case 'City': return '#ff5733';
+    case 'City': return '#3498db';
     case 'Fortress': return '#888';
     case 'Ruins': return '#000';
     case 'Capital': return '#f1c40f';
-    // add more types here
-    default: return '#3498db';
+    case 'Town': return '#2ecc71';
+    case 'Pirate Settlement': return '#d42410ff';
+    case 'Dwarven Settlement': return '#8e44ad';
+    default: return '#fff';
   }
 }
 
