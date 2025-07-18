@@ -30,19 +30,6 @@
     {
       "type": "Feature",
       "properties": {
-        "type": "City"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          14369.979422612876,
-          1901.7405985073292
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "type": "City",
         "name": "Shoun"
       },
@@ -583,6 +570,50 @@
     {"type":"Feature","properties":{"type":"City","name":"Uthmere"},"geometry":{"type":"Point","coordinates":[11853.600531932205,7902.454293460244]}},
     {"type":"Feature","properties":{"type":"City","name":"N'Jast"},"geometry":{"type":"Point","coordinates":[12897.265499895915,8813.222577598795]}},
     {"type":"Feature","properties":{"type":"City","name":"Mulptan"},"geometry":{"type":"Point","coordinates":[13852.231624590391,8635.193154168168]}},
-    {"type":"Feature","properties":{"type":"City","name":"Almorel"},"geometry":{"type":"Point","coordinates":[15774.374133336498,7621.124004838241]}}
+    {"type":"Feature","properties":{"type":"City","name":"Almorel"},"geometry":{"type":"Point","coordinates":[15774.374133336498,7621.124004838241]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Thruldar"},"geometry":{"type":"Point","coordinates":[15155.047103890092,2755.421922146482]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"God-Tomb of Nergal"},"geometry":{"type":"Point","coordinates":[13536.487371182891,3643.6414201690163]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"God-Tomb of Marduk"},"geometry":{"type":"Point","coordinates":[13921.14581282214,3980.2781256465937]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Sekras"},"geometry":{"type":"Point","coordinates":[13928.785511080545,4065.7005851542804]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Firetrees"},"geometry":{"type":"Point","coordinates":[12983.968715852463,3804.419108280156]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Unthalass"},"geometry":{"type":"Point","coordinates":[13597.91500597308,4447.229981938472]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Tomb of Ur-Hammabi"},"geometry":{"type":"Point","coordinates":[13282.257029749597,4495.804791846384]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Dalath"},"geometry":{"type":"Point","coordinates":[13017.277054903949,4597.799516677831]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Ssintar"},"geometry":{"type":"Point","coordinates":[13190.820022134621,4658.410172804469]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Red Haven"},"geometry":{"type":"Point","coordinates":[13358.344618697953,4636.720134506015]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Winterkeep"},"geometry":{"type":"Point","coordinates":[16563.05112589876,8389.522208116761]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Myth Drannor"},"geometry":{"type":"Point","coordinates":[9273.829252257483,7813.565350557784]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Hlaungadath"},"geometry":{"type":"Point","coordinates":[6864.0213609167595,9268.28038918405]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Ascore"},"geometry":{"type":"Point","coordinates":[6682.319597279586,9209.706997201505]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Ruins of Ascarl"},"geometry":{"type":"Point","coordinates":[1491.7543703807369,8268.116803137229]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Caer Corwell"},"geometry":{"type":"Point","coordinates":[3138.507511083682,4837.007272335928]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Port Castigliar"},"geometry":{"type":"Point","coordinates":[4937.624677125362,2052.379057197939]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Mezro"},"geometry":{"type":"Point","coordinates":[4910.309504822159,1992.5053755569907]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Ishau"},"geometry":{"type":"Point","coordinates":[5049.515614623744,1475.8114007763147]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Sudolphor"},"geometry":{"type":"Point","coordinates":[8623.401526586698,2771.1858520599917]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Dalelost"},"geometry":{"type":"Point","coordinates":[9741.107211262153,3484.542923123156]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Dragonspear Castle"},"geometry":{"type":"Point","coordinates":[5572.255216974412,6932.502679281658]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Well of Dragons"},"geometry":{"type":"Point","coordinates":[7299.018368429191,6999.463831708857]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Ss'that'tiss'ssun"},"geometry":{"type":"Point","coordinates":[6467.4840402489335,7017.4758640975015]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Orogoth"},"geometry":{"type":"Point","coordinates":[5971.504537238333,7237.503712718869]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Spellgard"},"geometry":{"type":"Point","coordinates":[6568.66614881215,8032.875001027904]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Stone Bridge"},"geometry":{"type":"Point","coordinates":[4851.464167825522,7988.272775207793]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Thundertree"},"geometry":{"type":"Point","coordinates":[3992.576379680308,8215.440634414459]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Starmantle"},"geometry":{"type":"Point","coordinates":[9339.476868026832,5921.571531760248]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Ordulin"},"geometry":{"type":"Point","coordinates":[9755.67131893969,7023.017823049327]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Esembra"},"geometry":{"type":"Point","coordinates":[9388.75876859543,7531.388166755575]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Morningstar Hollows"},"geometry":{"type":"Point","coordinates":[10374.629656192146,5735.256506826883]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Arrabar"},"geometry":{"type":"Point","coordinates":[10049.316287420535,4527.988290334694]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Mussum"},"geometry":{"type":"Point","coordinates":[10339.557538570658,4621.988916655025]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Shamph"},"geometry":{"type":"Point","coordinates":[10579.320643955456,4742.855449228249]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Iljak"},"geometry":{"type":"Point","coordinates":[10488.373428110315,4778.683289700252]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Samra"},"geometry":{"type":"Point","coordinates":[10568.238915882683,4818.392180258827]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Three Swords"},"geometry":{"type":"Point","coordinates":[12362.444779129848,2228.7011038133624]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Khôltar"},"geometry":{"type":"Point","coordinates":[12541.15962165162,2584.0343719621997]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Glas Mesa"},"geometry":{"type":"Point","coordinates":[11786.324370398408,5205.894085048148]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Cimbar"},"geometry":{"type":"Point","coordinates":[11932.255070432955,5462.217803263742]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Hlath"},"geometry":{"type":"Point","coordinates":[11015.387507143869,5232.128253413442]}},
+    {"type":"Feature","properties":{"type":"Ruins","name":"Gildenglade"},"geometry":{"type":"Point","coordinates":[10437.984637964597,5413.928960760619]}},
+    {"type":"Feature","properties":{"type":"Capital","name":"Heldapan"},"geometry":{"type":"Point","coordinates":[16646.716625343586,3370.1803734305645]}}
   ]
 }

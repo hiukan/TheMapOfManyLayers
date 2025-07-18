@@ -19,11 +19,26 @@ const map = L.map('map', {
   maxBoundsViscosity: 1.0
 });
 
+/* var cityMarker = L.icon({
+  iconUrl: 'city_icon.png',
+  iconSize: [12,12],
+  iconAnchor: [6,6],
+  popupAnchor: [0, -24]
+});
+
+var ruinsMarker = L.icon({
+  iconUrl: 'ruins_icon.png',
+  iconSize: [24,24],
+  iconAnchor: [12,12],
+  popupAnchor: [0, -24]
+}); */
+
 function getColorByType(type) {
   switch (type) {
     case 'City': return '#ff5733';
     case 'Fortress': return '#888';
-    case 'Town': return '#2ecc71';
+    case 'Ruins': return '#000';
+    case 'Capital': return '#f1c40f';
     // add more types here
     default: return '#3498db';
   }
