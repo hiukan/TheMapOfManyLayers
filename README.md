@@ -51,5 +51,9 @@ All original map artwork belongs to its respective creators. This project is for
 ## How to Use
 
 After cloning, you can use the map by opening the index.html file in the browser
+
 If you want the markers to be displayed, you will have to use a local development server (python, live server, ...)
-You can get coordinates (displayed in console) for landmarks by clicking on them (for now will be displayed with more info - consider coordinates field)
+
+You can get coordinates (displayed in console & copied to clipboard) for landmarks by clicking on them
+
+The Marker type picker changes the type field of the generated object, (for now) it's a tool to help populate the geojson file
