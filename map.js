@@ -53,7 +53,7 @@ function createLayerGroups(data) {
 // === Highlight on hover ===
 function highlightOnHover(layer) {
   layer.on("mouseover", function (e) {
-    layer.setStyle({ weight: 5, color: "#FFD700" });
+    layer.setStyle({ weight: getWeightByType(layer.feature.properties.type)*1.5, color: getColorByType(layer.feature.properties.type) });
   });
   layer.on("mouseout", function (e) {
     layer.setStyle({ weight: getWeightByType(layer.feature.properties.type), color: getColorByType(layer.feature.properties.type) });
@@ -165,6 +165,9 @@ L.rectangle(imageBounds, {
   fill: false
 }).addTo(map);
 
+
+let pointLayers = [];
+
 fetch('locations.geojson')
   .then(response => response.json())
   .then(data => {
@@ -172,7 +175,7 @@ fetch('locations.geojson')
     L.geoJSON(data, {
       pointToLayer: function (feature, latlng) {
         // Handle points
-        return L.circleMarker(latlng, {
+        const layer = L.circleMarker(latlng, {
           radius: getRadiusByZoom(map.getZoom()), // set initial size
           fillColor: getColorByType(feature.properties.type),
           color: "#000",
@@ -180,6 +183,8 @@ fetch('locations.geojson')
           opacity: 1,
           fillOpacity: 0.8
         });
+        pointLayers.push(layer); // Store point for zoom resizing
+        return layer;
       },
       style: function (feature) {
         // Handle lines and polygons
@@ -210,6 +215,20 @@ fetch('locations.geojson')
 
     // Add layer control
     L.control.layers(null, overlayLayers, { collapsed: false }).addTo(map);
+
+    // On zoom, resize points
+    /* map.on('zoomend', () => {
+      const zoom = map.getZoom();
+      pointLayers.forEach(layer => {
+        if (layer.setRadius) {
+          const newRadius = getRadiusByZoom(zoom);
+          if (newRadius !== layer.getRadius()) { // Only update if radius has changed
+            layer.setRadius(newRadius);
+            if (layer.redraw) layer.redraw(); // force a redraw if needed
+          }
+        }
+      });
+    }); */
   });
 
 
@@ -236,35 +255,6 @@ const drawControl = new L.Control.Draw({
 });
 map.addControl(drawControl);
 
-
-/* map.on('click', function (e) {
-  const coords = [e.latlng.lng, e.latlng.lat]; // reversed for GeoJSON
-
-  const type = document.getElementById("markerType").value;
-  const marker = L.circleMarker(e.latlng, {
-    radius: 6,
-    fillColor: "#ff7800",
-    color: "#000",
-    weight: 1,
-    opacity: 1,
-    fillOpacity: 0.8
-  }).addTo(map).bindPopup(`${type}`);
-
-    const newLandmark = {
-      type: "Feature",
-      properties: { type, name: "" },
-      geometry: {
-        type: "Point",
-        coordinates: coords
-      }
-    }
-  navigator.clipboard.writeText(JSON.stringify(newLandmark)).then(() => {
-    console.log(`${JSON.stringify(newLandmark)} copied to clipboard`);
-  }).catch(err => {
-    console.error("Failed to copy coordinates: ", err);
-  });
-}); */
-
 map.on(L.Draw.Event.CREATED, function (event) {
   const layer = event.layer;
   const type = document.getElementById("markerType").value;
@@ -287,20 +277,5 @@ map.on(L.Draw.Event.CREATED, function (event) {
 
 // Function to define how big the points should be
 function getRadiusByZoom(zoom) {
-  // You can tweak these values however you like!
-  /* if (zoom >= 16) return 12;
-  if (zoom >= 14) return 8;
-  if (zoom >= 12) return 6;
-  return 4; */
-  return (zoom+9) * 0.8;  // Try tweaking the multiplier
+  return (zoom+9) * 0.8;
 }
-
-// On zoom, resize all circle markers
-/* map.on('zoomend', () => {
-  const zoom = map.getZoom();
-  overlayLayers.eachLayer(layer => {
-    if (layer.setRadius) {
-      layer.setRadius(getRadiusByZoom(zoom));
-    }
-  });
-}); */
